@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<title>Buschwebsite</title>
+<link rel="icon" type="image/png" href="WebsiteIcon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+<style>
+html, body{
+margin:0;
+padding:0;
+}
+body {
+background-image: url(Background.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: space;
+
+}
+
+.button-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(90, 92, 87, 0.644);
+box-sizing: border-box;
+padding:60px 10px;
+position: fixed;
+z-index: 999;
+top: 0;
+right:0;
+left:0;
+transition: height 0.3s ease, padding 0.3s ease;
+}
+.button-bar.shrink{
+height: 70px;
+padding: 5px 20px
+
+}
+
+
+.button-bar .titel {
+
+flex-grow: 1;
+text-align: center;
+color:rgb(33, 58, 33);
+font: bold;
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+}
+.button-bar .buttons {
+display: flex;
+}
+.button-bar .buttons button {
+background-color: rgba(70, 68, 68, 0.527);
+border: none;
+color: rgb(39, 59, 39);
+padding: 20px 30px;
+text-align: center;
+font-size: 18px;
+margin-left: 10px;
+margin-bottom: 0;
+cursor: pointer;
+border: 4px;
+}
+.button-bar .buttons button:first-child {
+margin-left: 0;
+}
+.button-bar .buttons button:hover {
+background-color: rgba(41, 58, 43, 0.61);
+}
+.content {
+padding: 60px 250px;
+z-index: 5;
+color: rgb(40, 73, 43);
+overflow-y: auto;
+background-color: beige;
+margin-top: 270px;
+}
+.content p {
+max-width: 800;
+margin: 20px auto;
+font-size:18px;
+line-height: 1.6;
+text-align: left
+}
+.content .IMG2 {
+margin: 20px auto;
+display: block;
+max-width: 100%;
+height: auto;
+box-sizing: content-box;
+align-content: center;
+}
+
+.button-bar img {
+object-fit: contain;
+height: 100%;
+
+
+
+
+}
+
+</style>
+</head>
+<body>
+<div class="button-bar" id="navbar">
+<img src="IconBB.png">
+    <span class="titel">Über Büsche</span>
+            <div class="buttons">
+            <button>Über mich</button>
+            <button>Kontakt</button>
+            <button>Archiv</button>
+            </div>
+</div>
+<div class="content">
+<h1>saghjsahgjshahjashg</h1>
+<p>saiudghpaisudapsoudhapsoudhasudhüasoduhu<br> sssssssssssssssssssssssssssssssssssssssssssssssssssssssss <br>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww <br> eeeeeeeeeeeeeeeeee <br>wwwwwwww  </p>
+<p>sinlose bucchstaben als platzhalter 6769484564684846516s4a65d46waawugiadoszdgwasodzfaszufdwatusofdo <br>ipugpa9siugdiaudghia <br>usgdhiaupsdgauisgdipua<br>gsudgiusagpdiuasgsuipasiudpasiudgaispsudgiausgdiugaid<br>ugpsaiudgpsaiugdapiusdiusagiusdgiaspidugapsiu <br> hausiodpaushdpoasuidahpsdua9uh8dsuoahpdoauwh <br> opuahsuhdsauhdpaosiudhopsahpudahusdhasuhd <br> a9sud0ás09duap0su9daüsäd9iuaüspduiasudiaoudüöäaisudoausoidusaoudo<br>asudaoisodiaiossodiaudiosuioaudioaiudsiduiasouodiuaio
+</p>
+<h2>fffffffffffffffffffffffffffffffffffdddddddddddd</h2>
+<hr>
+<div class="IMG2">
+<img src="Bild2Homepage.png" alt="tttttttttttttttttttttt">
+</div>
+<hr>
+<div class="Copyright">
+</div>
+
+<script>
+window.onscroll = function() {
+shrinkNavbar();
+};
+function shrinkNavbar() {
+const navbar = document.getElementById("navbar");
+if (window.scrollY > 270) {
+    navbar.classList.add("shrink");
+} else {
+navbar.classList.remove("shrink");
+}
+}
+</script>
+</body>
+</html>
